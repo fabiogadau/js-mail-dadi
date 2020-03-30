@@ -4,7 +4,7 @@ console.log('Js ok');
 **/
 // Stabilisco le variabili che mi serviranno
 var email = ['michele@boolean.careers', 'fabio@boolean.careers', 'roberto@boolean.careers'];
-var user = prompt('Inserisci il tuo indirizzo e-mail').toLowerCase();
+var user = prompt('Inserisci il tuo indirizzo e-mail');
 var userFound = false;
 
 // Controllo che l'email inserita dall'utente sia presente nell'Array
