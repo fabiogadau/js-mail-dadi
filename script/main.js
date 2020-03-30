@@ -24,3 +24,30 @@ if (userFound == true) {
 else {
   console.log('Errore di autenticazione');
 }
+
+
+/**
+* GIOCO DEI DADI
+**/
+// Stabilisco le variabili che mi serviranno
+var dado = document.getElementById('dado');
+
+// Assegno la funzione al bottone
+dado.addEventListener('click',
+  function() {
+    player = Math.floor(Math.random() * 6) + 1;
+    console.log(player);
+    computer = Math.floor(Math.random() * 6) + 1;
+    console.log(computer);
+
+    if (player > computer) {
+      console.log('Hai vinto');
+    }
+    else if (player == computer) {
+      console.log('Pareggiato');
+    }
+    else {
+      console.log('Hai perso');
+    }
+  }
+)
